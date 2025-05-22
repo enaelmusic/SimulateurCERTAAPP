@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{701DB463-3EDE-4B89-BC29-F9E31946257B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Simulateur</RootNamespace>
+    <AssemblyName>Simulateur</AssemblyName>
+    <TargetFrameworkVersion>v1.1</TargetFrameworkVersion>
+    <FileAlignment>4096</FileAlignment>
+    <ApplicationIcon>Simulateur.ico</ApplicationIcon>
+    <StartupObject>Simulateur.Simulation</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-PrivateImplementationDetails-.cs" />
+    <Compile Include="ActionDocument.cs" />
+    <Compile Include="APropos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="APropos.Designer.cs">
+      <DependentUpon>APropos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ap_Message.cs" />
+    <Compile Include="Ap_station.cs" />
+    <Compile Include="BoutonPauseAction.cs" />
+    <Compile Include="BufferTrame.cs" />
+    <Compile Include="Cable.cs" />
+    <Compile Include="CableEnCours.cs" />
+    <Compile Include="CacheArpEdit.cs" />
+    <Compile Include="CarteAccesDistant.cs" />
+    <Compile Include="CarteReseau.cs" />
+    <Compile Include="ClefTable.cs" />
+    <Compile Include="ConfigCable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCable.Designer.cs">
+      <DependentUpon>ConfigCable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigCarte.Designer.cs">
+      <DependentUpon>ConfigCarte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigInterConnexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigInterConnexion.Designer.cs">
+      <DependentUpon>ConfigInterConnexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigInternet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigInternet.Designer.cs">
+      <DependentUpon>ConfigInternet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigStation.Designer.cs">
+      <DependentUpon>ConfigStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigSwitch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigSwitch.Designer.cs">
+      <DependentUpon>ConfigSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnecteurPaire.cs" />
+    <Compile Include="ConvertisseurReseau.cs" />
+    <Compile Include="DDialogPlus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DDialogPlus.Designer.cs">
+      <DependentUpon>DDialogPlus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DDialogPlusEmissionTrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DDialogPlusEmissionTrame.Designer.cs">
+      <DependentUpon>DDialogPlusEmissionTrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DebugForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DebugForm.Designer.cs">
+      <DependentUpon>DebugForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelegueAction.cs" />
+    <Compile Include="DelegueConfirmation.cs" />
+    <Compile Include="DemoArp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoArp.Designer.cs">
+      <DependentUpon>DemoArp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoCarteReseau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoCarteReseau.Designer.cs">
+      <DependentUpon>DemoCarteReseau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoDialogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoDialogue.Designer.cs">
+      <DependentUpon>DemoDialogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoEchecPing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoEchecPing.Designer.cs">
+      <DependentUpon>DemoEchecPing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoEnvoyerSegment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoEnvoyerSegment.Designer.cs">
+      <DependentUpon>DemoEnvoyerSegment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoHub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoHub.Designer.cs">
+      <DependentUpon>DemoHub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoPaquetIp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoPaquetIp.Designer.cs">
+      <DependentUpon>DemoPaquetIp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoPing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoPing.Designer.cs">
+      <DependentUpon>DemoPing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoSegmentTransmis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoSegmentTransmis.Designer.cs">
+      <DependentUpon>DemoSegmentTransmis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DemoSwitch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DemoSwitch.Designer.cs">
+      <DependentUpon>DemoSwitch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogue.Designer.cs">
+      <DependentUpon>Dialogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogueCacheArp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogueCacheArp.Designer.cs">
+      <DependentUpon>DialogueCacheArp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogueFichierHosts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogueFichierHosts.Designer.cs">
+      <DependentUpon>DialogueFichierHosts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogueHashTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogueHashTable.Designer.cs">
+      <DependentUpon>DialogueHashTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogueMacPort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogueMacPort.Designer.cs">
+      <DependentUpon>DialogueMacPort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogueMacVlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogueMacVlan.Designer.cs">
+      <DependentUpon>DialogueMacVlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogueNatPat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogueNatPat.Designer.cs">
+      <DependentUpon>DialogueNatPat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialoguePortsEcoutes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialoguePortsEcoutes.Designer.cs">
+      <DependentUpon>DialoguePortsEcoutes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialoguePortVlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialoguePortVlan.Designer.cs">
+      <DependentUpon>DialoguePortVlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogueReglesFiltrage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogueReglesFiltrage.Designer.cs">
+      <DependentUpon>DialogueReglesFiltrage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogueReqTrs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogueReqTrs.Designer.cs">
+      <DependentUpon>DialogueReqTrs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogueRoute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogueRoute.Designer.cs">
+      <DependentUpon>DialogueRoute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DomaineCollision.cs" />
+    <Compile Include="DonneesSimulation.cs" />
+    <Compile Include="DonneesSimulationIp.cs" />
+    <Compile Include="DonneesTrame.cs" />
+    <Compile Include="ElementReseau.cs" />
+    <Compile Include="EmissionTrameDialogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmissionTrameDialogue.Designer.cs">
+      <DependentUpon>EmissionTrameDialogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtatDocument.cs" />
+    <Compile Include="EtatTransitionEventArgs.cs" />
+    <Compile Include="EtatTransitionEventHandler.cs" />
+    <Compile Include="Fai.cs" />
+    <Compile Include="FichierHostsEdit.cs" />
+    <Compile Include="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form10.Designer.cs">
+      <DependentUpon>Form10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfig.Designer.cs">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionDocument.cs" />
+    <Compile Include="HashTableEdit.cs" />
+    <Compile Include="Hub.cs" />
+    <Compile Include="IAppliParam\IAppliParam.cs" />
+    <Compile Include="InputBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputBox.Designer.cs">
+      <DependentUpon>InputBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interconnexion.cs" />
+    <Compile Include="Internet.cs" />
+    <Compile Include="IpEtat.cs" />
+    <Compile Include="Ip_adresse.cs" />
+    <Compile Include="Ip_CableVirtuel.cs" />
+    <Compile Include="Ip_carte.cs" />
+    <Compile Include="Ip_ConfigIpCarte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ip_ConfigIpCarte.Designer.cs">
+      <DependentUpon>Ip_ConfigIpCarte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ip_ConfigIpStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ip_ConfigIpStation.Designer.cs">
+      <DependentUpon>Ip_ConfigIpStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ip_DialogueSaisieIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ip_DialogueSaisieIP.Designer.cs">
+      <DependentUpon>Ip_DialogueSaisieIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ip_masque.cs" />
+    <Compile Include="Ip_PaquetIp.cs" />
+    <Compile Include="Ip_PaquetIpDemoManuel.cs" />
+    <Compile Include="Ip_quartet.cs" />
+    <Compile Include="Ip_station.cs" />
+    <Compile Include="LecteurDemo.cs" />
+    <Compile Include="MacPortEdit.cs" />
+    <Compile Include="MacVlanEdit.cs" />
+    <Compile Include="MessageSt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageSt.Designer.cs">
+      <DependentUpon>MessageSt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MethodeTracer.cs" />
+    <Compile Include="NatPatEdit.cs" />
+    <Compile Include="Noeud.cs" />
+    <Compile Include="NoeudsDemoDialogue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NoeudsDemoDialogue.Designer.cs">
+      <DependentUpon>NoeudsDemoDialogue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaquetIpEventArgs.cs" />
+    <Compile Include="PaquetIpEventHandler.cs" />
+    <Compile Include="Param.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Param.Designer.cs">
+      <DependentUpon>Param.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParamBool.cs" />
+    <Compile Include="ParamCouleur.cs" />
+    <Compile Include="Parametre.cs" />
+    <Compile Include="ParamListe.cs" />
+    <Compile Include="ParamNumericUpDown.cs" />
+    <Compile Include="PointConnexion.cs" />
+    <Compile Include="Port.cs" />
+    <Compile Include="Port8021qSwitch.cs" />
+    <Compile Include="PortDeCascadeHub.cs" />
+    <Compile Include="PortDeCascadeSwitch.cs" />
+    <Compile Include="PortFai.cs" />
+    <Compile Include="PortHub.cs" />
+    <Compile Include="PortsEcoutesEdit.cs" />
+    <Compile Include="PortSwitch.cs" />
+    <Compile Include="PortVlanEdit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Protection.cs" />
+    <Compile Include="ProtocoleTrs.cs" />
+    <Compile Include="RamSwitch.cs" />
+    <Compile Include="ReactionStation.cs" />
+    <Compile Include="ReactionSwitch.cs" />
+    <Compile Include="ReglesFiltrageEdit.cs" />
+    <Compile Include="ReqTrsEdit.cs" />
+    <Compile Include="RouteEdit.cs" />
+    <Compile Include="SegmentTrsEventArgs.cs" />
+    <Compile Include="SegmentTrsEventHandler.cs" />
+    <Compile Include="Simulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simulation.Designer.cs">
+      <DependentUpon>Simulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Station.cs" />
+    <Compile Include="SuiteAnnuler.cs" />
+    <Compile Include="SuiteOk.cs" />
+    <Compile Include="SuiteTracerCableVirtuelIp.cs" />
+    <Compile Include="Switch.cs" />
+    <Compile Include="TabParam.cs" />
+    <Compile Include="TimerEtatTransition.cs" />
+    <Compile Include="TLEtat.cs" />
+    <Compile Include="TraceCable.cs" />
+    <Compile Include="TraceLigne.cs" />
+    <Compile Include="TraceManuel.cs" />
+    <Compile Include="TrameEthernet.cs" />
+    <Compile Include="TrameEventArgs.cs" />
+    <Compile Include="TrameEventHandler.cs" />
+    <Compile Include="Trs_DialogueReponse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trs_DialogueReponse.Designer.cs">
+      <DependentUpon>Trs_DialogueReponse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trs_DialogueSaisie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trs_DialogueSaisie.Designer.cs">
+      <DependentUpon>Trs_DialogueSaisie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trs_SegmentTrs.cs" />
+    <Compile Include="Trs_station.cs" />
+    <Compile Include="TypeActivite.cs" />
+    <Compile Include="TypeDePaquetIp.cs" />
+    <Compile Include="TypeSimulationIp.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="APropos.resources" />
+    <EmbeddedResource Include="Ap_Message.resources" />
+    <EmbeddedResource Include="Cable.resources" />
+    <EmbeddedResource Include="CableEnCours.resources" />
+    <EmbeddedResource Include="CacheArpEdit.resources" />
+    <EmbeddedResource Include="CarteAccesDistant.resources" />
+    <EmbeddedResource Include="CarteReseau.resources" />
+    <EmbeddedResource Include="ConfigCable.resources" />
+    <EmbeddedResource Include="ConfigCarte.resources" />
+    <EmbeddedResource Include="ConfigInterConnexion.resources" />
+    <EmbeddedResource Include="ConfigInternet.resources" />
+    <EmbeddedResource Include="ConfigStation.resources" />
+    <EmbeddedResource Include="ConfigSwitch.resources" />
+    <EmbeddedResource Include="DDialogPlus.resources" />
+    <EmbeddedResource Include="DDialogPlusEmissionTrame.resources" />
+    <EmbeddedResource Include="DebugForm.resources" />
+    <EmbeddedResource Include="DemoArp.resources" />
+    <EmbeddedResource Include="DemoCarteReseau.resources" />
+    <EmbeddedResource Include="DemoDialogue.resources" />
+    <EmbeddedResource Include="DemoEchecPing.resources" />
+    <EmbeddedResource Include="DemoEnvoyerSegment.resources" />
+    <EmbeddedResource Include="DemoHub.resources" />
+    <EmbeddedResource Include="DemoPaquetIp.resources" />
+    <EmbeddedResource Include="DemoPing.resources" />
+    <EmbeddedResource Include="DemoSegmentTransmis.resources" />
+    <EmbeddedResource Include="DemoSwitch.resources" />
+    <EmbeddedResource Include="Dialogue.resources" />
+    <EmbeddedResource Include="DialogueCacheArp.resources" />
+    <EmbeddedResource Include="DialogueFichierHosts.resources" />
+    <EmbeddedResource Include="DialogueHashTable.resources" />
+    <EmbeddedResource Include="DialogueMacPort.resources" />
+    <EmbeddedResource Include="DialogueMacVlan.resources" />
+    <EmbeddedResource Include="DialogueNatPat.resources" />
+    <EmbeddedResource Include="DialoguePortsEcoutes.resources" />
+    <EmbeddedResource Include="DialoguePortVlan.resources" />
+    <EmbeddedResource Include="DialogueReglesFiltrage.resources" />
+    <EmbeddedResource Include="DialogueReqTrs.resources" />
+    <EmbeddedResource Include="DialogueRoute.resources" />
+    <EmbeddedResource Include="ElementReseau.resources" />
+    <EmbeddedResource Include="EmissionTrameDialogue.resources" />
+    <EmbeddedResource Include="FichierHostsEdit.resources" />
+    <EmbeddedResource Include="Form10.resources" />
+    <EmbeddedResource Include="FormConfig.resources" />
+    <EmbeddedResource Include="GestionDocument.resources" />
+    <EmbeddedResource Include="HashTableEdit.resources" />
+    <EmbeddedResource Include="Hub.resources" />
+    <EmbeddedResource Include="InputBox.resources" />
+    <EmbeddedResource Include="Interconnexion.resources" />
+    <EmbeddedResource Include="Internet.resources" />
+    <EmbeddedResource Include="internet_blanc.bmp" />
+    <EmbeddedResource Include="Ip_CableVirtuel.resources" />
+    <EmbeddedResource Include="Ip_ConfigIpCarte.resources" />
+    <EmbeddedResource Include="Ip_ConfigIpStation.resources" />
+    <EmbeddedResource Include="Ip_DialogueSaisieIP.resources" />
+    <EmbeddedResource Include="LecteurDemo.resources" />
+    <EmbeddedResource Include="MacPortEdit.resources" />
+    <EmbeddedResource Include="MacVlanEdit.resources" />
+    <EmbeddedResource Include="MessageSt.resources" />
+    <EmbeddedResource Include="NatPatEdit.resources" />
+    <EmbeddedResource Include="Noeud.resources" />
+    <EmbeddedResource Include="NoeudsDemoDialogue.resources" />
+    <EmbeddedResource Include="Param.resources" />
+    <EmbeddedResource Include="ParamBool.resources" />
+    <EmbeddedResource Include="ParamCouleur.resources" />
+    <EmbeddedResource Include="Parametre.resources" />
+    <EmbeddedResource Include="ParamListe.resources" />
+    <EmbeddedResource Include="ParamNumericUpDown.resources" />
+    <EmbeddedResource Include="PointConnexion.resources" />
+    <EmbeddedResource Include="Port.resources" />
+    <EmbeddedResource Include="Port8021qSwitch.resources" />
+    <EmbeddedResource Include="PortDeCascadeHub.resources" />
+    <EmbeddedResource Include="PortFai.resources" />
+    <EmbeddedResource Include="PortHub.resources" />
+    <EmbeddedResource Include="PortsEcoutesEdit.resources" />
+    <EmbeddedResource Include="PortSwitch.resources" />
+    <EmbeddedResource Include="PortVlanEdit.resources" />
+    <EmbeddedResource Include="ReglesFiltrageEdit.resources" />
+    <EmbeddedResource Include="ReqTrsEdit.resources" />
+    <EmbeddedResource Include="RouteEdit.resources" />
+    <EmbeddedResource Include="Simulation.resources" />
+    <EmbeddedResource Include="Station.resources" />
+    <EmbeddedResource Include="Switch.resources" />
+    <EmbeddedResource Include="TabParam.resources" />
+    <EmbeddedResource Include="TimerEtatTransition.resources" />
+    <EmbeddedResource Include="TraceManuel.resources" />
+    <EmbeddedResource Include="Trs_DialogueReponse.resources" />
+    <EmbeddedResource Include="Trs_DialogueSaisie.resources" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

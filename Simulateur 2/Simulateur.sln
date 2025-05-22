@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Simulateur", "Simulateur\Simulateur.csproj", "{701DB463-3EDE-4B89-BC29-F9E31946257B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{701DB463-3EDE-4B89-BC29-F9E31946257B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{701DB463-3EDE-4B89-BC29-F9E31946257B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{701DB463-3EDE-4B89-BC29-F9E31946257B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{701DB463-3EDE-4B89-BC29-F9E31946257B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
